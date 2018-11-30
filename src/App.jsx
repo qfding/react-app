@@ -5,6 +5,7 @@ import home from './pages/home/index'
 import classes from './pages/classes/index'
 import shopcar from './pages/shopcar/index'
 import mine from './pages/mine/index'
+import search from './common/search'
 
 import './App.css'
 
@@ -24,12 +25,12 @@ export default class App extends Component{
                         <Route path="/classes" component={classes}/>
                         <Route path="/shopcar" component={shopcar}/>
                         <Route path="/mine" component={mine}/>
+                        <Route path="/search" component={search}/>
                         <Route render={()=>{
                             //对'/'重定向
                             return <Redirect to="/home"/>
                         }}/>
                     </Switch>
-
                     
 
 

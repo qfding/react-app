@@ -7,15 +7,15 @@ import message from '../../assets/message.png'
 
 //复杂组件，容器组件
 export default class Home extends Component{
-    constructor(){
+    constructor(...rest){
         super();
         this.state = {
             swiperInfo:[],
             classesInfo:[],
             noticeInfo:[],
-            winInfo:[]
+            winInfo:[],
         }
-        
+        this.history=rest[0].history
     }
     render(){
        let {swiperInfo,classesInfo,noticeInfo,winInfo}=this.state;
@@ -112,7 +112,7 @@ export default class Home extends Component{
                     }
                </div>
 
-               <div className='search'>
+               <div className='search' onClick={this.searchAction.bind(this)}>
                     茅台醇
                </div>
 
@@ -121,8 +121,12 @@ export default class Home extends Component{
                </div>
             </div>
         ) 
-        
-            
+ 
+    }
+
+    searchAction(){
+        this.history.push('/search')
+        console.log(this.history);
     }
 
     
