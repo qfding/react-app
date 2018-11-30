@@ -1,0 +1,148 @@
+#home{
+    font-size: 0.14rem;
+    .first-swiper{
+        height: 2.2rem;
+        .swiper-slide{
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .swiper-pagination{
+            // bottom: -0.15rem;
+            .swiper-pagination-bullet-active{
+                background: red;
+            }
+        }
+    }
+    .whitespace{
+        width: 100%;
+        height: 0.1rem;
+    }
+    .second-swiper{
+        background-color: #fff;
+        &.swiper-container{
+            overflow: visible;
+            .swiper-pagination{
+                // bottom: -0.15rem;
+                .swiper-pagination-bullet-active{
+                    background: red;
+                }
+            }
+        }
+        .one-Pice{
+            width: 100%;
+            padding: 0.2rem;
+            &::after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+            li{
+                width: 25%;
+                float: left;
+                margin-bottom: 0.1rem;
+                text-align: center;
+                img{
+                    margin:0 auto;
+                    width: 0.5rem;
+                    margin-bottom: 0.1rem;
+                }
+                span{
+                    width: 100%;
+                }
+            }
+        }
+        .notice{
+            left: 3%;
+            width: 94%;
+            height: 0.4rem;
+            line-height: 0.4rem;
+            background: #fff url(http://maotai-prod.oss-cn-hangzhou.aliyuncs.com/assets/images/index/icon_gonggao.png) 0 no-repeat;
+            background-size: 30%;
+            padding-left: 33%;
+            position: absolute;
+            box-shadow: 0.02rem 0.02rem 0.15rem rgba(0,0,0,.2);
+            border-radius: .15rem;
+            bottom: -.4rem;
+            .noticeMore{
+                position: absolute;
+                right: 0.1rem;
+                top: 0.1rem;
+                border-left: .01rem solid #999;
+                color: #999;
+                height: 0.2rem;
+                line-height: 0.2rem;
+                padding-left: 0.05rem;
+                font-size: 0.12rem;
+            }
+        }
+    }
+    .content{
+        margin-top:0.4rem;
+        .winInfo{
+            padding-top: 0.2rem;
+            h2{
+                padding-left: 0.05rem;
+                border-left: 2px solid #333;
+                font-size: 0.20rem;
+            }
+            ul{
+                padding: 0.2rem 0.1rem;
+                background-color: #fff;
+                &::after{
+                    content: '';
+                    display: block;
+                    clear: both;
+                }
+                li{
+                    float: left;
+                    width: 50%;
+                    text-align: center;
+                    
+
+                    img{
+                        display: inline-block;
+                        width: 1rem;
+                    }
+                    p{
+                        width: 86%;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        font-size: 0.12rem;
+                        margin:0.1rem 0;
+                    }
+                    span{
+                        color: #e70012;
+                    }
+                }
+            }
+        }
+    }
+    .search{
+        width: 80%;
+        height: 0.3rem;
+        line-height: 0.3rem;
+        font-size: 0.14rem;
+        padding-left: 0.1rem;
+        color: #fff;
+        position: absolute;
+        top:0.1rem;
+        left:0.2rem;
+        z-index: 10;
+        background-color: hsla(0,0%,100%,0.3);
+        border-radius: 0.05rem;
+        border: 2px solid #fff;
+        background: url(../../assets/search-icon.png) center right no-repeat;
+        background-size: 6%;
+    }
+    .message{
+        position: absolute;
+        top:0.15rem;
+        right: 0.2rem;
+        z-index: 10;
+        img{
+            width: 0.25rem;
+        }
+    }
+}
